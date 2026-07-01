@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Release QA Dashboard - Index</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#f6f8fc,#eef2f7);color:#1e293b;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+.wrap{max-width:760px;width:100%}
+h1{font-size:26px;margin:0 0 6px}
+.sub{color:#64748b;font-size:13.5px;margin-bottom:26px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+a.card{display:block;background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:20px;
+  text-decoration:none;color:#1e293b;box-shadow:0 1px 3px rgba(15,23,42,.06);transition:.15s}
+a.card:hover{border-color:#94a3b8;transform:translateY(-2px);box-shadow:0 6px 18px rgba(15,23,42,.1)}
+.card .t{font-size:17px;font-weight:700}
+.card .d{color:#64748b;font-size:13px;margin-top:6px;line-height:1.5}
+.tag{display:inline-block;margin-top:12px;background:#eef2ff;color:#4338ca;border-radius:999px;
+  padding:3px 10px;font-size:12px;font-weight:600}
+.foot{color:#94a3b8;font-size:12px;margin-top:26px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Release QA Dashboard - rel26.07</h1>
+  <div class="sub">BrowserStack App Automate + Percy visual testing. Shareable, hosted over the internet.</div>
+  <div class="grid">
+    <a class="card" href="release-report.html">
+      <div class="t">Full Release Dashboard</div>
+      <div class="d">QA sanity (iOS &amp; Android), UAT regional rollup, KPIs, pass/fail charts, top failure clusters, and the Percy visual section.</div>
+      <div class="tag">iOS + Android + Percy</div>
+    </a>
+    <a class="card" href="percy-report.html">
+      <div class="t">Percy Visual Dashboard</div>
+      <div class="d">Latest diff build per platform with embedded diff screenshots, snapshot counts, and review status.</div>
+      <div class="tag">Percy only</div>
+    </a>
+  </div>
+  <div class="foot">Static report - data baked in at generation time. Regenerate to refresh.</div>
+</div>
+</body>
+</html>
